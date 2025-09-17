@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ae9eede5f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Code Editor</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js"></script>
+  <body>
+    <div class="container">
+      <div class="left">
+        <label><i class="fa-brands fa-html5"></i>HTML</label>
+        <textarea id="html-code" onkeyup="run()"></textarea>
+
+        <label><i class="fa-brands fa-css3"></i>CSS</label>
+        <textarea id="css-code" onkeyup="run()"></textarea>
+
+        <label><i class="fa-brands fa-js"></i>JAVASCRIPT</label>
+        <textarea id="js-code" onkeyup="run()"></textarea>
+      </div>
+      <div class="right">
+        <label><i class="fa-solid fa-play"></i> RUN</label>
+        <iframe id="output"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
